@@ -9,10 +9,18 @@
 @import url('./base.css');
 @import url('./container.css');
 @import url('./animations.css');
+@import url('./common.css');
 
 /* Sections style */
 @import url('./header.css');
-@import url('./vite-promo.css');
-@import url('./badges.css');
-@import url('./back-link.css');
+
+@import url('./hero.css');
+@import url('./reviews.css');
+@import url('./aboutGame.css');
+@import url('./aboutGame.css');
+@import url('./disclaimer.css');
+@import url('./gallery.css');
+@import url('./advantages.css');
+@import url('./faq.css');
+
 @import url('./footer.css');
