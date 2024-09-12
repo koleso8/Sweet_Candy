@@ -9,6 +9,10 @@
   margin-right: auto;
 }
 .logo {
+  width: 104px;
+  @media only screen and (min-width: 768px) {
+    width: 194px;
+  }
 }
 
 .nav {
@@ -58,5 +62,6 @@
 }
 
 .burger {
-  stroke: aliceblue;
+  stroke: rgb(255, 255, 255);
+  margin-right: 12px;
 }

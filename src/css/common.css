@@ -1,13 +1,18 @@
 .titleWrapper {
   position: relative;
+  width: 300px;
 }
 .mainTitleStroke {
   font-weight: 400;
-  font-size: 96px;
+  font-size: 32px;
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  -webkit-text-stroke: 16px #a34e13;
+  -webkit-text-stroke: 8px #a34e13;
+  @media only screen and (min-width: 768px) {
+    -webkit-text-stroke: 16px #a34e13;
+    font-size: 96px;
+  }
 }
 .mainTitle {
   position: absolute;
@@ -17,7 +22,7 @@
   z-index: 1;
 
   font-weight: 400;
-  font-size: 96px;
+  font-size: 32px;
   background: linear-gradient(
     180deg,
     #ffe18f 0%,
@@ -35,16 +40,24 @@
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+
+  @media only screen and (min-width: 768px) {
+    font-size: 96px;
+  }
 }
 .titleStroke {
   font-weight: 400;
-  font-size: 96px;
+  font-size: 24px;
   position: relative;
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  -webkit-text-stroke: 16px #a34e13;
-  font-size: 80px;
+  -webkit-text-stroke: 8px #a34e13;
+
+  @media only screen and (min-width: 768px) {
+    -webkit-text-stroke: 16px #a34e13;
+    font-size: 80px;
+  }
 }
 
 .title {
@@ -54,7 +67,7 @@
   left: 0;
 
   font-weight: 400;
-  font-size: 96px;
+  font-size: 24px;
   background: linear-gradient(
     180deg,
     #ffe18f 0%,
@@ -65,5 +78,8 @@
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  font-size: 80px;
+
+  @media only screen and (min-width: 768px) {
+    font-size: 80px;
+  }
 }
