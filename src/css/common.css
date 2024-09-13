@@ -1,9 +1,14 @@
 .titleWrapper {
   position: relative;
-  width: 300px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  @media only screen and (min-width: 768px) {
+  }
 }
 .mainTitleStroke {
   font-weight: 400;
+  text-align: center;
   font-size: 32px;
   background-clip: text;
   -webkit-background-clip: text;
@@ -12,15 +17,18 @@
   @media only screen and (min-width: 768px) {
     -webkit-text-stroke: 16px #a34e13;
     font-size: 96px;
+    text-align: start;
   }
 }
 .mainTitle {
   position: absolute;
   top: 0;
   left: 0;
-
+  left: 50%;
   z-index: 1;
-
+  transform: translate(-50%);
+  text-wrap: nowrap;
+  text-align: center;
   font-weight: 400;
   font-size: 32px;
   background: linear-gradient(
@@ -42,6 +50,7 @@
   -webkit-text-fill-color: transparent;
 
   @media only screen and (min-width: 768px) {
+    text-align: start;
     font-size: 96px;
   }
 }
@@ -61,10 +70,13 @@
 }
 
 .title {
+  display: flex;
+  text-wrap: nowrap;
   z-index: 1;
   position: absolute;
+  transform: translateX(-50%);
   top: 0;
-  left: 0;
+  left: 50%;
 
   font-weight: 400;
   font-size: 24px;
@@ -82,4 +94,7 @@
   @media only screen and (min-width: 768px) {
     font-size: 80px;
   }
+}
+
+.titleHero {
 }
