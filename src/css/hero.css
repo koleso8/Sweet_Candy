@@ -27,23 +27,23 @@
   }
 }
 .heroImg {
-  width: 198px;
+  width: 50vw;
   margin-bottom: 18px;
 
   @media only screen and (min-width: 768px) {
     z-index: 1;
     position: absolute;
     right: 0;
-    top: -6%;
-    min-width: 400px;
+    top: -10%;
+    width: 50vh;
     margin-bottom: 0;
   }
   @media only screen and (min-width: 1200px) {
     position: absolute;
-    right: 0;
-    top: 50vh;
-    transform: translateY(-65%);
-    min-width: 600px;
+
+    right: 10px;
+    width: 28vw;
+    max-width: 38vw;
     margin-bottom: 0;
   }
 }

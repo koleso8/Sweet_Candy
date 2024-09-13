@@ -19,8 +19,7 @@
     -webkit-text-stroke: 16px #a34e13;
     font-size: 96px;
     text-align: start;
-    padding-top: 10px;
-    margin-bottom: 64px;
+    margin-bottom: 0;
   }
 }
 .mainTitle {
@@ -46,8 +45,6 @@
   -webkit-text-fill-color: transparent;
 
   @media only screen and (min-width: 768px) {
-    padding-top: 10px;
-
     text-align: start;
     font-size: 96px;
   }
