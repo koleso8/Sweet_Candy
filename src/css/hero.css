@@ -1,3 +1,49 @@
 .hero {
   border-bottom: 1px solid purple;
+  padding-bottom: 38px;
+}
+.hero > .container {
+  position: relative;
+}
+
+.box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  @media only screen and (min-width: 768px) {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  @media only screen and (min-width: 1200px) {
+    flex-direction: column;
+    align-items: flex-start;
+    flex-wrap: wrap;
+  }
+}
+.heroImg {
+  width: 198px;
+  margin-bottom: 18px;
+  @media only screen and (min-width: 768px) {
+    z-index: 1;
+    position: absolute;
+    right: 0;
+    top: -6%;
+    min-width: 400px;
+    margin-bottom: 0;
+  }
+  @media only screen and (min-width: 1200px) {
+    position: absolute;
+    right: 0;
+    top: -6%;
+    min-width: 500px;
+    margin-bottom: 0;
+  }
+}
+.GPbutton {
+  width: 192px;
+  z-index: 1;
+  @media only screen and (min-width: 1200px) {
+    width: 364px;
+    margin-bottom: 220px;
+  }
 }

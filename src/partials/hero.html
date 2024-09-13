@@ -1,14 +1,66 @@
 <section class="hero">
   <div class="container">
-    <div class="titleWrapper">
-      <span class="mainTitleStroke titleHero">
-        Sweet<br />
-        Candy Legend</span
+    <div class="box">
+      <div class="titleWrapper">
+        <span class="mainTitleStroke titleHero">
+          Sweet<br />
+          Candy Legend</span
+        >
+        <h1 class="mainTitle titleHero">
+          Sweet<br />
+          Candy Legend
+        </h1>
+      </div>
+
+      <picture>
+        <source
+          media="(min-width: 768px)"
+          srcset="./img/desktop_hero1x.png 1x, ./img/desktop_hero2x.png 2x"
+          type="image/png"
+        />
+
+        <source
+          media="(max-width: 767px)"
+          srcset="./img/mobile_hero1x.png 1x, ./img/mobile_hero2x.png 2x"
+          type="image/png"
+        />
+        <img
+          src="./img/desktop_hero1x.png "
+          alt="logo"
+          class="heroImg"
+          loading="lazy"
+        />
+      </picture>
+
+      <a
+        href="https://play.google.com/store/apps/details?id=com.candy.sweet.legend.free"
+        target="_blank"
       >
-      <h1 class="mainTitle titleHero">
-        Sweet<br />
-        Candy Legend
-      </h1>
+        <picture>
+          <source
+            media="(min-width: 768px)"
+            srcset="
+              ./img/desktop_google_play_button1x.png 1x,
+              ./img/desktop_google_play_button2x.png 2x
+            "
+            type="image/png"
+          />
+          <source
+            media="(max-width: 767px)"
+            srcset="
+              ./img/mobile_google_play_button1x.png 1x,
+              ./img/mobile_google_play_button2x.png 2x
+            "
+            type="image/png"
+          />
+          <img
+            src="./img/desktop_google_play_button1x.png"
+            alt="logo"
+            class="GPbutton"
+            loading="lazy"
+          />
+        </picture>
+      </a>
     </div>
   </div>
 </section>

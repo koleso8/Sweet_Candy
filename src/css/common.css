@@ -1,12 +1,13 @@
 .titleWrapper {
   position: relative;
-  width: 100%;
+  width: auto;
   display: flex;
   justify-content: center;
   @media only screen and (min-width: 768px) {
   }
 }
 .mainTitleStroke {
+  z-index: 2;
   font-weight: 400;
   text-align: center;
   font-size: 32px;
@@ -18,6 +19,8 @@
     -webkit-text-stroke: 16px #a34e13;
     font-size: 96px;
     text-align: start;
+    padding-top: 110px;
+    margin-bottom: 64px;
   }
 }
 .mainTitle {
@@ -25,7 +28,7 @@
   top: 0;
   left: 0;
   left: 50%;
-  z-index: 1;
+  z-index: 3;
   transform: translate(-50%);
   text-wrap: nowrap;
   text-align: center;
@@ -38,23 +41,19 @@
     #fcbf17 72.5%,
     #ffe18f 100%
   );
-  background: linear-gradient(
-    180deg,
-    #ffe18f 0%,
-    #fcbf17 34.5%,
-    #fcbf17 72.5%,
-    #ffe18f 100%
-  );
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 
   @media only screen and (min-width: 768px) {
+    padding-top: 110px;
+
     text-align: start;
     font-size: 96px;
   }
 }
 .titleStroke {
+  z-index: 2;
   font-weight: 400;
   font-size: 24px;
   position: relative;
@@ -72,7 +71,7 @@
 .title {
   display: flex;
   text-wrap: nowrap;
-  z-index: 1;
+  z-index: 3;
   position: absolute;
   transform: translateX(-50%);
   top: 0;
