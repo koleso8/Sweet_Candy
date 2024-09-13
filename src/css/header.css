@@ -2,8 +2,14 @@
   display: flex;
   flex-direction: row;
   align-items: center;
-  padding: 8px 0;
-  border-bottom: 1px solid rebeccapurple;
+  padding: 0;
+}
+.header {
+  position: fixed;
+  z-index: 999;
+  background: linear-gradient(180deg, #ab5a87 0%, #c78aac 100%);
+  width: 100vw;
+  box-shadow: 2px 1px 60px #dd32ff;
 }
 .nav-logo {
   margin-right: auto;
