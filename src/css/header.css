@@ -55,6 +55,10 @@
 .nav-link.active::after {
   background: #5d008f;
 }
+
+.nav-item {
+  text-transform: capitalize;
+}
 .burgerNav {
   @media only screen and (min-width: 768px) {
     display: none;
