@@ -1,0 +1,145 @@
+.reviews_section {
+  padding-bottom: 56px;
+  border-bottom: 1px solid red;
+}
+.titleWrapper {
+  margin-bottom: 40px;
+}
+
+.reviews-item h3 {
+  font-family: 'Inter Tight', sans-serif;
+  font-weight: 600;
+  font-size: 24px;
+  color: #020202;
+  margin-bottom: 14px;
+}
+
+.reviews-list {
+  margin-bottom: 32px;
+}
+
+.reviews-item {
+  border: 1px solid rgba(250, 250, 250, 0.2);
+  border-radius: 16px;
+  padding: 32px;
+  width: 188px;
+  height: 173px;
+  background: linear-gradient(90deg, #e7dcff 0%, #f3edff 100%);
+}
+
+.brackets {
+  position: absolute;
+  top: 38px;
+  right: 22px;
+  fill: var(--accent-stroke);
+}
+
+.reviews-item p {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: -0.02em;
+  color: #020202;
+  height: 120px;
+  overflow: scroll;
+}
+
+.reviews-arrow {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+}
+
+.reviews-swiper-button-prev > svg {
+  transform: translateX(-3px);
+}
+.reviews-swiper-button-prev {
+  display: flex;
+  width: 64px;
+  height: 64px;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  border-radius: 60px;
+  background-color: var(--accent-stroke);
+}
+
+.reviews-swiper-button-next > svg {
+  transform: translateX(-3px);
+}
+.reviews-swiper-button-next {
+  transform: rotate(180deg);
+  display: flex;
+  width: 64px;
+  height: 64px;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  border-radius: 60px;
+  background-color: var(--accent-stroke);
+}
+
+.swiper-button-disabled {
+  border: 1px solid rgba(250, 250, 250, 0.2);
+}
+
+.reviews-btn-accent {
+  transition: var(--transition);
+}
+
+.reviews-btn-accent:hover,
+.reviews-btn-accent:focus {
+  transition: var(--transition);
+  background-color: rgba(119, 43, 226, 0.842);
+}
+
+.reviews-icon {
+  border: transparent;
+  outline: transparent;
+  fill: var(--text);
+  stroke: var(--text);
+}
+
+.swiper-button-disabled svg {
+  opacity: 0.1;
+}
+
+@media screen and (min-width: 768px) {
+  .review_section {
+    padding-bottom: 100px;
+  }
+  .titleWrapper {
+    margin-bottom: 84px;
+  }
+  .reviews-list {
+    margin-bottom: 48px;
+  }
+
+  .reviews-swiper-button-prev {
+    width: 96px;
+    height: 96px;
+  }
+  .reviews-swiper-button-next {
+    width: 96px;
+    height: 96px;
+  }
+  .reviews-swiper-button-prev > svg {
+    height: 32px;
+    width: 32px;
+  }
+  .reviews-swiper-button-next > svg {
+    height: 32px;
+    width: 32px;
+  }
+
+  .reviews-arrow {
+    gap: 104px;
+  }
+  .brackets {
+    top: 44px;
+    right: 40px;
+    width: 32px;
+    height: 24px;
+  }
+}

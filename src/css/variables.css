@@ -1,0 +1,12 @@
+:root {
+  --font-family: 'Inter Tight', sans-serif;
+  --background: #1c1d20;
+  --cards: #242527;
+  --arrow: #3b3b3b;
+  --text: #fafafa;
+  --title: rgba(250, 250, 250, 0.4);
+  --text2: rgba(250, 250, 250, 0.6);
+  --circle: #885bee;
+  --accent-stroke: #885bee;
+  --transition: 0.3s cubic-bezier(0.41, 0.6, 0.52, 0.93);
+}

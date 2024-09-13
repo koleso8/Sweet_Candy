@@ -3,6 +3,7 @@
   flex-direction: row;
   align-items: center;
   padding: 0;
+  height: 48px;
 }
 .header {
   position: fixed;
@@ -13,6 +14,10 @@
 }
 .nav-logo {
   margin-right: auto;
+  padding-top: 8px;
+  @media only screen and (min-width: 768px) {
+    padding-top: 54px;
+  }
 }
 .logo {
   width: 104px;
@@ -65,6 +70,12 @@
 .nav-item {
   text-transform: capitalize;
 }
+.nav-item > a {
+  padding: 16px 0;
+}
+.nav-item > a:hover {
+  text-shadow: 2px 10px 60px #e53ac9;
+}
 .burgerNav {
   border: none;
   background: transparent;
@@ -112,6 +123,9 @@
   border: none;
   background: transparent;
 }
+.mobile_menu_close:hover {
+  text-shadow: 0px 5px 20px #ff00b7bf;
+}
 
 .mobile_menu_list {
   display: flex;
@@ -120,4 +134,8 @@
 }
 .mobile_menu_item {
   font-size: 24px;
+  text-transform: capitalize;
+}
+.mobile_menu_item:hover {
+  text-shadow: 0px 5px 20px #ff00b7bf;
 }

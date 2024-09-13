@@ -19,7 +19,7 @@
     -webkit-text-stroke: 16px #a34e13;
     font-size: 96px;
     text-align: start;
-    padding-top: 110px;
+    padding-top: 10px;
     margin-bottom: 64px;
   }
 }
@@ -46,7 +46,7 @@
   -webkit-text-fill-color: transparent;
 
   @media only screen and (min-width: 768px) {
-    padding-top: 110px;
+    padding-top: 10px;
 
     text-align: start;
     font-size: 96px;
@@ -93,7 +93,4 @@
   @media only screen and (min-width: 768px) {
     font-size: 80px;
   }
-}
-
-.titleHero {
 }
