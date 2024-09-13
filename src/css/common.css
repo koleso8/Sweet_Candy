@@ -4,9 +4,11 @@
   display: flex;
   justify-content: center;
   @media only screen and (min-width: 768px) {
+    margin-bottom: 40px;
   }
 }
 .mainTitleStroke {
+  user-select: none;
   z-index: 2;
   font-weight: 400;
   text-align: center;
@@ -50,6 +52,7 @@
   }
 }
 .titleStroke {
+  user-select: none;
   z-index: 2;
   font-weight: 400;
   font-size: 24px;
@@ -66,6 +69,7 @@
 }
 
 .title {
+  user-select: none;
   display: flex;
   text-wrap: nowrap;
   z-index: 3;
