@@ -1,6 +1,13 @@
 .hero {
+  width: 100vw;
+  height: 100vh;
   border-bottom: 1px solid purple;
-  padding-bottom: 38px;
+  padding-top: 60px;
+  @media only screen and (min-width: 768px) {
+    padding-top: 120px;
+  }
+  @media only screen and (min-width: 1000px) {
+  }
 }
 .hero > .container {
   position: relative;
@@ -23,6 +30,7 @@
 .heroImg {
   width: 198px;
   margin-bottom: 18px;
+
   @media only screen and (min-width: 768px) {
     z-index: 1;
     position: absolute;
@@ -34,14 +42,17 @@
   @media only screen and (min-width: 1200px) {
     position: absolute;
     right: 0;
-    top: -6%;
-    min-width: 500px;
+    top: 50vh;
+    transform: translateY(-65%);
+    min-width: 600px;
     margin-bottom: 0;
   }
 }
 .GPbutton {
   width: 192px;
   z-index: 1;
+  box-shadow: 2px 1px 60px #dd32ff;
+  border-radius: 12px;
   @media only screen and (min-width: 1200px) {
     width: 364px;
     margin-bottom: 220px;
