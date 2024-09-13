@@ -19,7 +19,7 @@
     />
 
     <script type="module" crossorigin src="/Sweet_Candy/index.js"></script>
-    <link rel="stylesheet" crossorigin href="/Sweet_Candy/assets/index-Djk4ZTxk.css">
+    <link rel="stylesheet" crossorigin href="/Sweet_Candy/assets/index-CGAlafOl.css">
   </head>
   <body>
     <header class="header">
@@ -47,12 +47,6 @@
     </a>
     <nav class="nav">
       <ul class="nav-list">
-        <!-- <li class="nav-item">
-          <a class="nav-link {=$highlight-act}" href="./page-2.html">Page 2</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link {=$highlight-curr}" href="./page-3.html">Page 3</a>
-        </li> -->
         <li class="nav-item"><a href="#review">review</a></li>
         <li class="nav-item"><a href="#about">about</a></li>
         <li class="nav-item"><a href="#gallery">gallery</a></li>
@@ -62,10 +56,31 @@
         <li class="nav-item"><a href="#faq">FAQ</a></li>
       </ul>
     </nav>
-    <span class="burgerNav">
+    <button class="burgerNav" type="button">
       <svg class="burger" width="28" height="28">
-        <use href="/Sweet_Candy/assets/icons-dxFhDxPv.svg#burger"></use></svg
-    ></span>
+        <use href="/Sweet_Candy/assets/icons-dxFhDxPv.svg#burger"></use>
+      </svg>
+    </button>
+
+    <div class="mobile_menu_box">
+      <button
+        class="mobile_menu_close"
+        type="button"
+        aria-label="button open menu"
+      >
+        <svg class="burger" width="28" height="28">
+          <use href="/Sweet_Candy/assets/icons-dxFhDxPv.svg#close"></use>
+        </svg>
+      </button>
+
+      <ul class="mobile_menu_list">
+        <li class="mobile_menu_item"><a href="#review">review</a></li>
+        <li class="mobile_menu_item"><a href="#about">about</a></li>
+        <li class="mobile_menu_item"><a href="#gallery">gallery</a></li>
+        <li class="mobile_menu_item"><a href="#advantages">advantages</a></li>
+        <li class="mobile_menu_item"><a href="#faq">FAQ</a></li>
+      </ul>
+    </div>
   </div>
 </header>
 
