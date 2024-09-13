@@ -11,8 +11,15 @@
       href="https://fonts.googleapis.com/css2?family=Poetsen+One&display=swap"
       rel="stylesheet"
     />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+
     <script type="module" crossorigin src="/Sweet_Candy/index.js"></script>
-    <link rel="stylesheet" crossorigin href="/Sweet_Candy/assets/index-DfCQYaxS.css">
+    <link rel="stylesheet" crossorigin href="/Sweet_Candy/assets/index-Djk4ZTxk.css">
   </head>
   <body>
     <header class="header">
@@ -66,15 +73,61 @@
     <main>
       <section class="hero">
   <div class="container">
-    <div class="titleWrapper">
-      <span class="mainTitleStroke titleHero">
-        Sweet<br />
-        Candy Legend</span
+    <div class="box">
+      <div class="titleWrapper">
+        <span class="mainTitleStroke titleHero">
+          Sweet<br />
+          Candy Legend</span
+        >
+        <h1 class="mainTitle titleHero">
+          Sweet<br />
+          Candy Legend
+        </h1>
+      </div>
+
+      <picture>
+        <source
+          media="(min-width: 768px)"
+          srcset="/Sweet_Candy/assets/desktop_hero1x-Dyl4WH_9.png 1x, /Sweet_Candy/assets/desktop_hero2x-DsD1KAx8.png 2x"
+          type="image/png"
+        />
+
+        <source
+          media="(max-width: 767px)"
+          srcset="/Sweet_Candy/assets/mobile_hero1x-yCoDN5zR.png 1x, /Sweet_Candy/assets/mobile_hero2x-_9hFA0MX.png 2x"
+          type="image/png"
+        />
+        <img
+          src="./img/desktop_hero1x.png "
+          alt="logo"
+          class="heroImg"
+          loading="lazy"
+        />
+      </picture>
+
+      <a
+        href="https://play.google.com/store/apps/details?id=com.candy.sweet.legend.free"
+        target="_blank"
       >
-      <h1 class="mainTitle titleHero">
-        Sweet<br />
-        Candy Legend
-      </h1>
+        <picture>
+          <source
+            media="(min-width: 768px)"
+            srcset="/Sweet_Candy/assets/desktop_google_play_button1x-CrocPMwL.png 1x, /Sweet_Candy/assets/desktop_google_play_button2x-CBX-U7cg.png 2x"
+            type="image/png"
+          />
+          <source
+            media="(max-width: 767px)"
+            srcset="/Sweet_Candy/assets/mobile_google_play_button1x-CB0XwQB2.png 1x, /Sweet_Candy/assets/mobile_google_play_button2x-i3Jm_qFk.png 2x"
+            type="image/png"
+          />
+          <img
+            src="/Sweet_Candy/assets/desktop_google_play_button1x-CrocPMwL.png"
+            alt="logo"
+            class="GPbutton"
+            loading="lazy"
+          />
+        </picture>
+      </a>
     </div>
   </div>
 </section>
