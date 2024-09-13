@@ -56,10 +56,10 @@ function renderReviews(reviews) {
 
   reviewsList.insertAdjacentHTML('beforeend', markup);
 
-  const reviewCards = document.querySelectorAll('.reviews-item p');
-  reviewCards.forEach(reviewCard => {
-    OverlayScrollbars(reviewCard, defaultOptions);
-  });
+  // const reviewCards = document.querySelectorAll('.reviews-item p');
+  // reviewCards.forEach(reviewCard => {
+  //   OverlayScrollbars(reviewCard, defaultOptions);
+  // });
 }
 
 document.addEventListener('DOMContentLoaded', () => {
@@ -100,41 +100,41 @@ document.addEventListener('DOMContentLoaded', () => {
   });
 });
 
-// #region scroll
-import 'overlayscrollbars/overlayscrollbars.css';
-import {
-  OverlayScrollbars,
-  ScrollbarsHidingPlugin,
-  SizeObserverPlugin,
-  ClickScrollPlugin,
-} from 'overlayscrollbars';
+// // #region scroll
+// import 'overlayscrollbars/overlayscrollbars.css';
+// import {
+//   OverlayScrollbars,
+//   ScrollbarsHidingPlugin,
+//   SizeObserverPlugin,
+//   ClickScrollPlugin,
+// } from 'overlayscrollbars';
 
-OverlayScrollbars.plugin(ScrollbarsHidingPlugin);
-OverlayScrollbars.plugin(SizeObserverPlugin);
-OverlayScrollbars.plugin(ClickScrollPlugin);
+// OverlayScrollbars.plugin(ScrollbarsHidingPlugin);
+// OverlayScrollbars.plugin(SizeObserverPlugin);
+// OverlayScrollbars.plugin(ClickScrollPlugin);
 
-const defaultOptions = {
-  paddingAbsolute: false,
-  showNativeOverlaidScrollbars: false,
-  update: {
-    elementEvents: [['img', 'load']],
-    debounce: [0, 33],
-    attributes: null,
-    ignoreMutation: null,
-  },
-  overflow: {
-    x: 'scroll',
-    y: 'scroll',
-  },
-  scrollbars: {
-    theme: 'os-theme-light',
-    visibility: 'auto',
-    autoHide: 'scroll',
-    autoHideDelay: 100,
-    autoHideSuspend: false,
-    dragScroll: true,
-    clickScroll: false,
-    pointers: ['mouse', 'touch', 'pen'],
-  },
-};
-// #endregion scroll
+// const defaultOptions = {
+//   paddingAbsolute: false,
+//   showNativeOverlaidScrollbars: false,
+//   update: {
+//     elementEvents: [['img', 'load']],
+//     debounce: [0, 33],
+//     attributes: null,
+//     ignoreMutation: null,
+//   },
+//   overflow: {
+//     x: 'scroll',
+//     y: 'scroll',
+//   },
+//   scrollbars: {
+//     theme: 'os-theme-light',
+//     visibility: 'auto',
+//     autoHide: 'scroll',
+//     autoHideDelay: 100,
+//     autoHideSuspend: false,
+//     dragScroll: true,
+//     clickScroll: false,
+//     pointers: ['mouse', 'touch', 'pen'],
+//   },
+// };
+// // #endregion scroll

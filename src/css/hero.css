@@ -27,24 +27,21 @@
   }
 }
 .heroImg {
-  width: 50vw;
-  margin-bottom: 18px;
+  width: 200px;
 
   @media only screen and (min-width: 768px) {
     z-index: 1;
     position: absolute;
     right: 0;
     top: -10%;
-    width: 50vh;
-    margin-bottom: 0;
+    width: 300px;
   }
   @media only screen and (min-width: 1200px) {
     position: absolute;
+    top: -16%;
 
     right: 10px;
-    width: 28vw;
-    max-width: 38vw;
-    margin-bottom: 0;
+    width: 460px;
   }
 }
 .GPbutton {

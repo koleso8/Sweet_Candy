@@ -40,3 +40,8 @@ h3,
 span {
   font-family: 'Poetsen One';
 }
+
+body.modal-open {
+  overscroll-behavior: unset;
+  overflow: hidden;
+}
