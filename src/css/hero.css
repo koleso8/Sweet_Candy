@@ -1,7 +1,6 @@
 .hero {
   width: 100vw;
   height: 100vh;
-  border-bottom: 1px solid purple;
   padding-top: 60px;
   @media only screen and (min-width: 768px) {
     padding-top: 120px;
