@@ -1,6 +1,30 @@
 .footer {
+  position: relative;
 }
 .footer-desc {
 }
 .footer-link {
+}
+.footer .nav-list {
+  margin-bottom: 24px;
+  @media only screen and (min-width: 768px) {
+    padding-bottom: 40px;
+  }
+  @media only screen and (min-width: 1200px) {
+    padding-bottom: 60px;
+  }
+}
+.footer .copyright {
+  @media only screen and (min-width: 768px) {
+    position: absolute;
+    top: 18px;
+    left: 10%;
+    @media only screen and (min-width: 1000px) {
+      left: 20%;
+    }
+  }
+  @media only screen and (min-width: 1200px) {
+    left: 50%;
+    transform: translateX(-50%);
+  }
 }

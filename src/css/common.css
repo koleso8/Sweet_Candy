@@ -52,6 +52,7 @@
   }
 }
 .titleStroke {
+  margin-bottom: 40px;
   user-select: none;
   z-index: 2;
   font-weight: 400;
@@ -69,6 +70,8 @@
 }
 
 .title {
+  margin-bottom: 40px;
+  text-wrap: wrap;
   user-select: none;
   display: flex;
   text-wrap: nowrap;
