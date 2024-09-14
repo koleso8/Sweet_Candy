@@ -6,6 +6,7 @@ const reviewsList = document.querySelector('.reviews-list');
 const prevBtnEl = document.querySelector('.reviews-icon-prev');
 const nextBtnEl = document.querySelector('.reviews-icon-next');
 
+const brack = './img/icons/icons.svg#brackets';
 async function makeReviews() {
   const reviews = [
     {
@@ -46,7 +47,7 @@ function renderReviews(reviews) {
     .map(review => {
       return `<li class="reviews-item swiper-slide">
       <svg class="brackets" width="18" height="18" >
-        <use href="./img/icons/icons.svg#brackets"></use>
+        <use href=${brack}></use>
       </svg>
           <h3>${review.author}</h3>
           <p>${review.review}</p>
