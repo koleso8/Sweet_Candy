@@ -36,7 +36,7 @@ function renderGallery(images) {
           type="image/png"
         />
         <img
-          src="./img/desktop_gallery_${img}1x.png "
+          src="./src/img/desktop_gallery_${img}1x.png "
           alt="img_${img}"
           class="galleryImg"
           loading="lazy"
@@ -54,8 +54,8 @@ document.addEventListener('DOMContentLoaded', () => {
 
   const swiper = new Swiper('.reviews-swiper', {
     modules: [Navigation, Scrollbar],
-    speed: 1000,
-
+    speed: 600,
+    loop: true,
     navigation: {
       nextEl: '.gallery-swiper-button-next',
       prevEl: '.gallery-swiper-button-prev',
