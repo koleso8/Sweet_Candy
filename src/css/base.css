@@ -45,3 +45,7 @@ body.modal-open {
   overscroll-behavior: unset;
   overflow: hidden;
 }
+
+.section {
+  scroll-margin-top: 60px;
+}
