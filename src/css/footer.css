@@ -6,6 +6,14 @@
 .footer-link {
 }
 .footer .nav-list {
+  justify-content: center;
+  font-family: 'Inter', sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.12;
+  color: #e7e7e7;
+  text-wrap: nowrap;
+  gap: 20px;
   margin-bottom: 24px;
   @media only screen and (min-width: 768px) {
     padding-bottom: 40px;

@@ -1,3 +1,4 @@
 import './js/mobileMenu';
-import './js/reviews';
 import './js/scroll';
+import './js/reviews';
+import './js/gallery';
