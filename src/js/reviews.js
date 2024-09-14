@@ -68,8 +68,8 @@ document.addEventListener('DOMContentLoaded', () => {
 
   const swiper = new Swiper('.reviews-swiper', {
     modules: [Navigation, Scrollbar],
-    speed: 1000,
-
+    speed: 600,
+    loop: true,
     navigation: {
       nextEl: '.reviews-swiper-button-next',
       prevEl: '.reviews-swiper-button-prev',
