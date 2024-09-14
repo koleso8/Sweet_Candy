@@ -52,10 +52,12 @@
   user-select: none;
 }
 
-.reviews-swiper-button-prev > svg {
+.reviews-swiper-button-prev > svg,
+.gallery-swiper-button-prev > svg {
   transform: translateX(-3px);
 }
-.reviews-swiper-button-prev {
+.reviews-swiper-button-prev,
+.gallery-swiper-button-prev {
   display: flex;
   width: 64px;
   height: 64px;
@@ -66,10 +68,12 @@
   background-color: var(--accent-stroke);
 }
 
-.reviews-swiper-button-next > svg {
+.reviews-swiper-button-next > svg,
+.gallery-swiper-button-next > svg {
   transform: translateX(-3px);
 }
-.reviews-swiper-button-next {
+.reviews-swiper-button-next,
+.gallery-swiper-button-next {
   transform: rotate(180deg);
   display: flex;
   width: 64px;
@@ -103,7 +107,7 @@
 }
 
 .swiper-button-disabled svg {
-  opacity: 0.1;
+  opacity: 0.4;
 }
 
 @media screen and (min-width: 768px) {
@@ -117,19 +121,23 @@
     margin-bottom: 48px;
   }
 
-  .reviews-swiper-button-prev {
+  .reviews-swiper-button-prev,
+  .gallery-swiper-button-prev {
     width: 96px;
     height: 96px;
   }
-  .reviews-swiper-button-next {
+  .reviews-swiper-button-next,
+  .gallery-swiper-button-next {
     width: 96px;
     height: 96px;
   }
-  .reviews-swiper-button-prev > svg {
+  .reviews-swiper-button-prev > svg,
+  .gallery-swiper-button-prev > svg {
     height: 32px;
     width: 32px;
   }
-  .reviews-swiper-button-next > svg {
+  .reviews-swiper-button-next > svg,
+  .gallery-swiper-button-next > svg {
     height: 32px;
     width: 32px;
   }
