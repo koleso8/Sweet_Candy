@@ -4,7 +4,7 @@
       </svg>
           <h3>${o.author}</h3>
           <p>${o.review}</p>
-        </li>`).join("");v.insertAdjacentHTML("beforeend",e),document.querySelectorAll(".reviews-item p").forEach(o=>{n(o,L)})}document.addEventListener("DOMContentLoaded",()=>{b();const t=new c(".reviews-swiper",{modules:[d,u],speed:1e3,navigation:{nextEl:".reviews-swiper-button-next",prevEl:".reviews-swiper-button-prev"},slidesPerView:1,spaceBetween:16,breakpoints:{768:{slidesPerView:2,spaceBetween:16},1e3:{slidesPerView:3,spaceBetween:16}}});document.addEventListener("keydown",e=>{e.key==="ArrowRight"?t.slideNext(1e3):e.key==="ArrowLeft"?t.slidePrev(1e3):e.key==="Tab"&&(e.preventDefault(),e.shiftKey?t.slidePrev(1e3):t.slideNext(1e3))})});n.plugin(m);n.plugin(p);n.plugin(g);const L={paddingAbsolute:!1,showNativeOverlaidScrollbars:!1,update:{elementEvents:[["img","load"]],debounce:[0,33],attributes:null,ignoreMutation:null},overflow:{x:"scroll",y:"scroll"},scrollbars:{theme:"os-theme-light",visibility:"auto",autoHide:"scroll",autoHideDelay:100,autoHideSuspend:!1,dragScroll:!0,clickScroll:!1,pointers:["mouse","touch","pen"]}},k=document.querySelector(".gallery-list");document.querySelector(".reviews-icon-prev");document.querySelector(".reviews-icon-next");async function S(){E(["first","second","third","fourth","fifth","sixth","seventh"])}function E(t){const e=t.map(s=>`<li class="gallery-item swiper-slide">
+        </li>`).join("");v.insertAdjacentHTML("beforeend",e),document.querySelectorAll(".reviews-item p").forEach(o=>{n(o,L)})}document.addEventListener("DOMContentLoaded",()=>{b();const t=new c(".reviews-swiper",{modules:[d,u],speed:600,loop:!0,navigation:{nextEl:".reviews-swiper-button-next",prevEl:".reviews-swiper-button-prev"},slidesPerView:1,spaceBetween:16,breakpoints:{768:{slidesPerView:2,spaceBetween:16},1e3:{slidesPerView:3,spaceBetween:16}}});document.addEventListener("keydown",e=>{e.key==="ArrowRight"?t.slideNext(1e3):e.key==="ArrowLeft"?t.slidePrev(1e3):e.key==="Tab"&&(e.preventDefault(),e.shiftKey?t.slidePrev(1e3):t.slideNext(1e3))})});n.plugin(m);n.plugin(p);n.plugin(g);const L={paddingAbsolute:!1,showNativeOverlaidScrollbars:!1,update:{elementEvents:[["img","load"]],debounce:[0,33],attributes:null,ignoreMutation:null},overflow:{x:"scroll",y:"scroll"},scrollbars:{theme:"os-theme-light",visibility:"auto",autoHide:"scroll",autoHideDelay:100,autoHideSuspend:!1,dragScroll:!0,clickScroll:!1,pointers:["mouse","touch","pen"]}},k=document.querySelector(".gallery-list");document.querySelector(".reviews-icon-prev");document.querySelector(".reviews-icon-next");async function S(){E(["first","second","third","fourth","fifth","sixth","seventh"])}function E(t){const e=t.map(s=>`<li class="gallery-item swiper-slide">
       <picture >
         <source
           media="(min-width: 768px)"
@@ -18,11 +18,11 @@
           type="image/png"
         />
         <img
-          src="./img/desktop_gallery_${s}1x.png "
+          src="./src/img/desktop_gallery_${s}1x.png "
           alt="img_${s}"
           class="galleryImg"
           loading="lazy"
         />
       </picture>
-      </li>`).join("");k.insertAdjacentHTML("beforeend",e)}document.addEventListener("DOMContentLoaded",()=>{S();const t=new c(".reviews-swiper",{modules:[d,u],speed:1e3,navigation:{nextEl:".gallery-swiper-button-next",prevEl:".gallery-swiper-button-prev"},slidesPerView:1,spaceBetween:16,breakpoints:{768:{slidesPerView:3,spaceBetween:16}}});document.addEventListener("keydown",e=>{e.key==="ArrowRight"?t.slideNext(1e3):e.key==="ArrowLeft"?t.slidePrev(1e3):e.key==="Tab"&&(e.preventDefault(),e.shiftKey?t.slidePrev(1e3):t.slideNext(1e3))})});
+      </li>`).join("");k.insertAdjacentHTML("beforeend",e)}document.addEventListener("DOMContentLoaded",()=>{S();const t=new c(".reviews-swiper",{modules:[d,u],speed:600,loop:!0,navigation:{nextEl:".gallery-swiper-button-next",prevEl:".gallery-swiper-button-prev"},slidesPerView:1,spaceBetween:16,breakpoints:{768:{slidesPerView:3,spaceBetween:16}}});document.addEventListener("keydown",e=>{e.key==="ArrowRight"?t.slideNext(1e3):e.key==="ArrowLeft"?t.slidePrev(1e3):e.key==="Tab"&&(e.preventDefault(),e.shiftKey?t.slidePrev(1e3):t.slideNext(1e3))})});
 //# sourceMappingURL=index.js.map
