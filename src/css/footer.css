@@ -1,5 +1,7 @@
 .footer {
   position: relative;
+  @media only screen and (min-width: 1200px) {
+  }
 }
 .footer-desc {
 }
@@ -15,24 +17,28 @@
   text-wrap: nowrap;
   gap: 20px;
   margin-bottom: 24px;
+
   @media only screen and (min-width: 768px) {
-    padding-bottom: 40px;
+    padding-bottom: 80px;
+  }
+  @media only screen and (min-width: 1000px) {
   }
   @media only screen and (min-width: 1200px) {
-    padding-bottom: 60px;
+    justify-content: end;
+    padding-bottom: 100px;
   }
 }
 .footer .copyright {
   @media only screen and (min-width: 768px) {
     position: absolute;
-    top: 18px;
-    left: 10%;
-    @media only screen and (min-width: 1000px) {
-      left: 20%;
-    }
-  }
-  @media only screen and (min-width: 1200px) {
+    top: 60px;
     left: 50%;
     transform: translateX(-50%);
+  }
+  @media only screen and (min-width: 1000px) {
+  }
+  @media only screen and (min-width: 1200px) {
+    top: 16px;
+    left: 50%;
   }
 }

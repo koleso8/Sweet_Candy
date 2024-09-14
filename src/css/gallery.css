@@ -13,4 +13,8 @@
 .gallery-item picture {
   display: flex;
   justify-content: center;
+  box-shadow: 2px 1px 40px #dd32ff;
+  border-radius: 80px;
+}
+.galleryImg {
 }
