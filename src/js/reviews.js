@@ -48,6 +48,7 @@ function renderReviews(reviews) {
       return `<li class="reviews-item swiper-slide">
           <h3>${review.author}</h3>
           <p>${review.review}</p>
+          <span>,,</span>
         </li>`;
     })
     .join('');
