@@ -1,0 +1,117 @@
+.faq .container {
+  padding-top: 32px;
+  padding-bottom: 32px;
+}
+
+@media only screen and (min-width: 768px) {
+  .faq .container {
+    padding-top: 48px;
+    padding-bottom: 48px;
+  }
+}
+@media only screen and (min-width: 1440px) {
+  .faq .container {
+    padding-top: 82px;
+    padding-bottom: 82px;
+  }
+}
+
+.faq-title {
+  color: var(--title);
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: -0.02em;
+  margin-bottom: 32px;
+}
+
+.circle-faq {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #fbbc04;
+  transition: var(--transition);
+  border-radius: 50%;
+
+  width: 24px;
+  height: 24px;
+  position: absolute;
+  top: 20px;
+  right: 0;
+  @media only screen and (min-width: 1000px) {
+    width: 34px;
+    height: 34px;
+  }
+}
+#ac.is-active .circle-faq {
+  background-color: var(--circle);
+}
+.circle-faq:hover,
+.circle-faq:focus {
+  transition: var(--transition);
+}
+
+.icon-faq {
+  width: 16px;
+  height: 16px;
+  stroke: #fff;
+  fill: #fff;
+  transition: var(--transition);
+  @media only screen and (min-width: 1000px) {
+    width: 20px;
+    height: 20px;
+  }
+}
+
+#ac.is-active .icon-faq {
+  transform: rotate(45deg);
+  transition: var(--transition);
+}
+
+#ac-text {
+  padding: 0;
+  padding-bottom: 26px;
+  font-family: 'Inter', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #e7e7e7;
+  @media only screen and (min-width: 1440px) {
+    font-size: 20px;
+  }
+}
+
+#ac-header {
+  font-family: 'Inter', sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+  color: var(--text);
+  padding: 16px 60px 16px 0;
+  line-height: 1.5;
+  font-family: var(--font-family);
+  @media only screen and (min-width: 1440px) {
+    padding: 16px 40px 20px 0;
+    font-size: 24px;
+  }
+}
+
+#ac {
+  background-color: transparent;
+  border: none;
+  margin-top: 0;
+  border-bottom: 1px solid #d4d2e3;
+  width: 100%;
+}
+
+#ac .ac-trigger::after {
+  content: '';
+}
+
+@media only screen and (min-width: 1440px) {
+  #accordion-container {
+    display: flex;
+    flex-wrap: wrap;
+    min-height: 250px;
+    max-height: 584px;
+  }
+}
