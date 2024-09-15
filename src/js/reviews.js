@@ -1,13 +1,12 @@
 import Swiper from 'swiper';
 import { Navigation, Pagination, Scrollbar } from 'swiper/modules';
-import icon from './img/icons/icons.svg';
+
 import 'swiper/css';
 
 const reviewsList = document.querySelector('.reviews-list');
 const prevBtnEl = document.querySelector('.reviews-icon-prev');
 const nextBtnEl = document.querySelector('.reviews-icon-next');
 
-const brack = `${icon}#brackets`;
 async function makeReviews() {
   const reviews = [
     {
@@ -42,13 +41,14 @@ async function makeReviews() {
   ];
   renderReviews(reviews);
 }
+console.log(iconBrackets);
 
 function renderReviews(reviews) {
   const markup = reviews
     .map(review => {
       return `<li class="reviews-item swiper-slide">
       <svg class="brackets" width="18" height="18" >
-        <use href=${brack}></use>
+        <use href='${iconBrackets}#brackets'></use>
       </svg>
           <h3>${review.author}</h3>
           <p>${review.review}</p>
@@ -114,6 +114,7 @@ import {
   SizeObserverPlugin,
   ClickScrollPlugin,
 } from 'overlayscrollbars';
+import { iconBrackets } from './images';
 
 OverlayScrollbars.plugin(ScrollbarsHidingPlugin);
 OverlayScrollbars.plugin(SizeObserverPlugin);

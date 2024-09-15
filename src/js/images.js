@@ -33,6 +33,10 @@ import gallery7_mob2x from '../img/mobile_gallery_seventh2x.png';
 import gallery7_desk1x from '../img/desktop_gallery_seventh1x.png';
 import gallery7_desk2x from '../img/desktop_gallery_seventh2x.png';
 
+import icon from '../img/icons/icons.svg';
+
+export const iconBrackets = icon;
+
 export const galleryImages = {
   gallery1_mob1x,
   gallery1_mob2x,
