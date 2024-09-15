@@ -1,12 +1,13 @@
 import Swiper from 'swiper';
-import 'swiper/css';
 import { Navigation, Pagination, Scrollbar } from 'swiper/modules';
+import icon from '../img/icons/icons.svg';
+import 'swiper/css';
 
 const reviewsList = document.querySelector('.reviews-list');
 const prevBtnEl = document.querySelector('.reviews-icon-prev');
 const nextBtnEl = document.querySelector('.reviews-icon-next');
 
-const brack = './img/icons/icons.svg#brackets';
+const brack = `${icon}#brackets`;
 async function makeReviews() {
   const reviews = [
     {
