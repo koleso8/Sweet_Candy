@@ -1,6 +1,6 @@
 import Swiper from 'swiper';
 import { Navigation, Pagination, Scrollbar } from 'swiper/modules';
-import icon from '../img/icons/icons.svg';
+import icon from './img/icons/icons.svg';
 import 'swiper/css';
 
 const reviewsList = document.querySelector('.reviews-list');
