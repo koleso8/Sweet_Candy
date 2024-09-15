@@ -41,15 +41,11 @@ async function makeReviews() {
   ];
   renderReviews(reviews);
 }
-// console.log(`.${iconBrackets}#brackets`);
 
 function renderReviews(reviews) {
   const markup = reviews
     .map(review => {
       return `<li class="reviews-item swiper-slide">
-      <svg class="brackets" width="18" height="18" >
-        <use href='.${iconBrackets}#brackets'></use>
-      </svg>
           <h3>${review.author}</h3>
           <p>${review.review}</p>
         </li>`;
