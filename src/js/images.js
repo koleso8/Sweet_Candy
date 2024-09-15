@@ -1,48 +1,71 @@
-import project1_mob1x from '../images/projects/image_1_mob@1x.webp';
-import project1_mob2x from '../images/projects/image_1_mob@2x.webp';
-import project1_tab1x from '../images/projects/image_1_tab_desk@1x.webp';
-import project1_tab2x from '../images/projects/image_1_tab_desk@2x.webp';
-import project2_mob1x from '../images/projects/image_2_mob@1x.webp';
-import project2_mob2x from '../images/projects/image_2_mob@2x.webp';
-import project2_tab1x from '../images/projects/image_2_tab_desk@1x.webp';
-import project2_tab2x from '../images/projects/image_2_tab_desk@2x.webp';
-import project3_mob1x from '../images/projects/image_3_mob@1x.webp';
-import project3_mob2x from '../images/projects/image_3_mob@2x.webp';
-import project3_tab1x from '../images/projects/image_3_tab_desk@1x.webp';
-import project3_tab2x from '../images/projects/image_3_tab_desk@2x.webp';
+import gallery1_mob1x from '../img/mobile_gallery_first1x.png';
+import gallery1_mob2x from '../img/mobile_gallery_first2x.png';
+import gallery1_desk1x from '../img/desktop_gallery_first1x.png';
+import gallery1_desk2x from '../img/desktop_gallery_first2x.png';
 
-export const projectsImages = {
-  project1_mob1x,
-  project1_mob2x,
-  project1_tab1x,
-  project1_tab2x,
-  project2_mob1x,
-  project2_mob2x,
-  project2_tab1x,
-  project2_tab2x,
-  project3_mob1x,
-  project3_mob2x,
-  project3_tab1x,
-  project3_tab2x,
+import gallery2_mob1x from '../img/mobile_gallery_second1x.png';
+import gallery2_mob2x from '../img/mobile_gallery_second2x.png';
+import gallery2_desk1x from '../img/desktop_gallery_second1x.png';
+import gallery2_desk2x from '../img/desktop_gallery_second2x.png';
+
+import gallery3_mob1x from '../img/mobile_gallery_third1x.png';
+import gallery3_mob2x from '../img/mobile_gallery_third2x.png';
+import gallery3_desk1x from '../img/desktop_gallery_third1x.png';
+import gallery3_desk2x from '../img/desktop_gallery_third2x.png';
+
+import gallery4_mob1x from '../img/mobile_gallery_fourth1x.png';
+import gallery4_mob2x from '../img/mobile_gallery_fourth2x.png';
+import gallery4_desk1x from '../img/desktop_gallery_fourth1x.png';
+import gallery4_desk2x from '../img/desktop_gallery_fourth2x.png';
+
+import gallery5_mob1x from '../img/mobile_gallery_fifth1x.png';
+import gallery5_mob2x from '../img/mobile_gallery_fifth2x.png';
+import gallery5_desk1x from '../img/desktop_gallery_fifth1x.png';
+import gallery5_desk2x from '../img/desktop_gallery_fifth2x.png';
+
+import gallery6_mob1x from '../img/mobile_gallery_sixth1x.png';
+import gallery6_mob2x from '../img/mobile_gallery_sixth2x.png';
+import gallery6_desk1x from '../img/desktop_gallery_sixth1x.png';
+import gallery6_desk2x from '../img/desktop_gallery_sixth2x.png';
+
+import gallery7_mob1x from '../img/mobile_gallery_seventh1x.png';
+import gallery7_mob2x from '../img/mobile_gallery_seventh2x.png';
+import gallery7_desk1x from '../img/desktop_gallery_seventh1x.png';
+import gallery7_desk2x from '../img/desktop_gallery_seventh2x.png';
+
+export const galleryImages = {
+  gallery1_mob1x,
+  gallery1_mob2x,
+  gallery1_desk1x,
+  gallery1_desk2x,
+
+  gallery2_mob1x,
+  gallery2_mob2x,
+  gallery2_desk1x,
+  gallery2_desk2x,
+
+  gallery3_mob1x,
+  gallery3_mob2x,
+  gallery3_desk1x,
+  gallery3_desk2x,
+
+  gallery4_mob1x,
+  gallery4_mob2x,
+  gallery4_desk1x,
+  gallery4_desk2x,
+
+  gallery5_mob1x,
+  gallery5_mob2x,
+  gallery5_desk1x,
+  gallery5_desk2x,
+
+  gallery6_mob1x,
+  gallery6_mob2x,
+  gallery6_desk1x,
+  gallery6_desk2x,
+
+  gallery7_mob1x,
+  gallery7_mob2x,
+  gallery7_desk1x,
+  gallery7_desk2x,
 };
-//?--------------------------------------------------------------------------
-import { projectsImages } from './images';
-
-<source
-  media="(min-width: 1440px)"
-  srcset="
-                ${item.imgTab1} 1x,
-                ${item.imgTab2} 2x
-                "
-  type="image/webp"
-/>;
-  />
-            <img
-                src="${item.imgMob1}"
-                alt="project"
-                width="311"
-                height="195"
-                class="projects-card-img"
-                loading="lazy"
-            />
-            </picture>
