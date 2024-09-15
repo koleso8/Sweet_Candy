@@ -30,8 +30,7 @@
   }
 }
 
-.reviews-item::after {
-  content: ',,';
+.reviews-item span {
   font-size: 90px;
   font-family: 'Lato', sans-serif;
   font-weight: 800;
