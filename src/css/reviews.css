@@ -19,17 +19,28 @@
   overflow: hidden;
   border: 1px solid rgba(250, 250, 250, 0.2);
   border-radius: 16px;
-  padding: 32px;
+  padding: 32px 24px;
   width: 188px;
   height: 173px;
   background: linear-gradient(90deg, #e7dcff 0%, #f3edff 100%);
+  @media screen and (min-width: 1000px) {
+    .reviews-item {
+      padding: 26px;
+    }
+  }
 }
 
-.brackets {
+.reviews-item::after {
+  content: ',,';
+  font-size: 90px;
+  font-family: 'Lato', sans-serif;
+  font-weight: 800;
+  letter-spacing: -4px;
+  color: var(--accent-stroke);
   position: absolute;
-  top: 20px;
-  right: 10px;
-  fill: var(--accent-stroke);
+  top: -70px;
+  right: 22px;
+  z-index: 99;
 }
 
 .reviews-item p {
@@ -114,6 +125,7 @@
   .reviews_section {
     padding-bottom: 100px;
   }
+
   .reviews_section > .titleWrapper {
     margin-bottom: 84px;
   }
