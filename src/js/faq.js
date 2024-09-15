@@ -50,9 +50,9 @@ function listItemTemplay(item) {
     <button type="button" class="ac-trigger" id="ac-header">
     ${title}
     <span class="circle-faq">
-    <svg class="icon-faq " width="12" height="8">
-    <use href="${svg}#add"></use>
-    </svg>
+    <p class="icon-faq " width="12" height="8">
+    +
+    </p>
     </span>
     </button>
     </h3>
