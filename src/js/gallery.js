@@ -1,6 +1,6 @@
 import Swiper from 'swiper';
 import 'swiper/css';
-import { Navigation, Pagination, Scrollbar } from 'swiper/modules';
+import { Navigation, Pagination, Scrollbar, Keyboard } from 'swiper/modules';
 import { galleryImages } from './images';
 
 const galleryList = document.querySelector('.gallery-list');
@@ -38,12 +38,6 @@ async function makeGallery() {
       imgMob2: galleryImages.gallery5_mob2x,
       imgDesk1: galleryImages.gallery5_desk1x,
       imgDesk2: galleryImages.gallery5_desk2x,
-    },
-    {
-      imgMob1: galleryImages.gallery2_mob1x,
-      imgMob2: galleryImages.gallery2_mob2x,
-      imgDesk1: galleryImages.gallery2_desk1x,
-      imgDesk2: galleryImages.gallery2_desk2x,
     },
     {
       imgMob1: galleryImages.gallery6_mob1x,
@@ -94,15 +88,18 @@ function renderGallery(images) {
 document.addEventListener('DOMContentLoaded', () => {
   makeGallery();
 
-  const swiper = new Swiper('.reviews-swiper', {
-    modules: [Navigation, Scrollbar],
+  const swiper = new Swiper('.gallery-swiper', {
+    modules: [Navigation, Scrollbar, Keyboard],
     speed: 600,
     loop: true,
     navigation: {
       nextEl: '.gallery-swiper-button-next',
       prevEl: '.gallery-swiper-button-prev',
     },
-
+    keyboard: {
+      enabled: true,
+      onlyInViewport: true,
+    },
     slidesPerView: 1,
     spaceBetween: 16,
     breakpoints: {
@@ -111,20 +108,5 @@ document.addEventListener('DOMContentLoaded', () => {
         spaceBetween: 16,
       },
     },
-  });
-
-  document.addEventListener('keydown', event => {
-    if (event.key === 'ArrowRight') {
-      swiper.slideNext(1000);
-    } else if (event.key === 'ArrowLeft') {
-      swiper.slidePrev(1000);
-    } else if (event.key === 'Tab') {
-      event.preventDefault();
-      if (event.shiftKey) {
-        swiper.slidePrev(1000);
-      } else {
-        swiper.slideNext(1000);
-      }
-    }
   });
 });
