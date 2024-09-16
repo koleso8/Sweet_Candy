@@ -9,6 +9,7 @@
 }
 .footer .nav-list {
   justify-content: center;
+  padding-top: 24px;
   font-family: 'Inter', sans-serif;
   font-weight: 400;
   font-size: 14px;
@@ -16,27 +17,35 @@
   color: #e7e7e7;
   text-wrap: nowrap;
   gap: 20px;
-  margin-bottom: 24px;
+  margin-bottom: 8px;
 
   @media only screen and (min-width: 768px) {
-    padding-bottom: 48px;
+    padding-bottom: 116px;
+    margin: 0;
   }
   @media only screen and (min-width: 1000px) {
-    padding-bottom: 60px;
+    padding-top: 0;
+    padding-bottom: 40px;
   }
   @media only screen and (min-width: 1200px) {
+    padding-bottom: 60px;
+    font-size: 18px;
     justify-content: end;
-    padding-bottom: 80px;
   }
 }
 .footer .copyright {
+  padding: 0 40px;
+  padding-bottom: 56px;
   @media only screen and (min-width: 768px) {
     position: absolute;
     top: 60px;
     left: 50%;
     transform: translateX(-50%);
+    top: 80px;
+    padding: 0;
   }
   @media only screen and (min-width: 1000px) {
+    top: 50px;
   }
   @media only screen and (min-width: 1200px) {
     top: 16px;

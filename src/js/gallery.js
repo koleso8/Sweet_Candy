@@ -40,6 +40,12 @@ async function makeGallery() {
       imgDesk2: galleryImages.gallery5_desk2x,
     },
     {
+      imgMob1: galleryImages.gallery2_mob1x,
+      imgMob2: galleryImages.gallery2_mob2x,
+      imgDesk1: galleryImages.gallery2_desk1x,
+      imgDesk2: galleryImages.gallery2_desk2x,
+    },
+    {
       imgMob1: galleryImages.gallery6_mob1x,
       imgMob2: galleryImages.gallery6_mob2x,
       imgDesk1: galleryImages.gallery6_desk1x,
