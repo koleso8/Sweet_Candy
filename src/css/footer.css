@@ -52,3 +52,24 @@
     left: 50%;
   }
 }
+
+.dog {
+  position: absolute;
+  display: none;
+
+  @media only screen and (min-width: 768px) {
+    display: block;
+
+    width: 100px;
+    top: 86px;
+    left: 10vw;
+  }
+  @media only screen and (min-width: 1000px) {
+    top: -14px;
+    left: 14vw;
+  }
+  @media only screen and (min-width: 1200px) {
+    top: -28px;
+    width: 140px;
+  }
+}
