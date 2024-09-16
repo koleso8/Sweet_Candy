@@ -5,3 +5,4 @@ import './js/gallery';
 import './js/images';
 import './js/faq';
 import './js/advantages';
+import './js/parallax';
