@@ -97,3 +97,30 @@
     font-size: 80px;
   }
 }
+
+.body_wrapper {
+  position: absolute;
+  top: 50vh;
+  left: 0;
+  transform: translateX(-50%);
+  transform: translateY(-50%);
+  z-index: 0;
+  @media only screen and (max-width: 767px) {
+    top: 40vh;
+    left: 5vw;
+  }
+}
+
+.balls {
+  overflow: visible;
+  z-index: 0;
+  width: 100vw;
+  height: 80vh;
+  background-image: url(../img/game-balls.png);
+  background-size: 800px;
+  background-repeat: no-repeat;
+  filter: blur(10px);
+  @media only screen and (max-width: 767px) {
+    background-size: 400px;
+  }
+}

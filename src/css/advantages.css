@@ -20,7 +20,7 @@
   flex-wrap: wrap;
   gap: 20px;
   padding-top: 62px;
-  row-gap: 104px;
+  row-gap: 44px;
   @media screen and (max-width: 1199px) {
     row-gap: 60px;
   }
@@ -29,6 +29,7 @@
   }
 
   & .bix {
+    box-shadow: 1px 1px 15px #dd32ff;
     width: calc(100% / 4 - 20px);
     height: 293px;
     padding-top: 54px;
@@ -81,6 +82,7 @@
 }
 
 .bix {
+  box-shadow: 1px 1px 15px #dd32ff;
   position: relative;
   border-radius: 8px;
   padding: 32px 20px 10px;
@@ -123,5 +125,6 @@
     height: 48px;
 
     background: #885bee;
+    box-shadow: inset 4px 4px 8px #6a019a53, inset -4px -4px 8px #980dee53;
   }
 }
