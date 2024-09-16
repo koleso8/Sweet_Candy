@@ -1,5 +1,5 @@
 import Swiper from 'swiper';
-import { Navigation, Pagination, Scrollbar } from 'swiper/modules';
+import { Navigation, Pagination, Scrollbar, Keyboard } from 'swiper/modules';
 
 import 'swiper/css';
 
@@ -65,14 +65,17 @@ document.addEventListener('DOMContentLoaded', () => {
   makeReviews();
 
   const swiper = new Swiper('.reviews-swiper', {
-    modules: [Navigation, Scrollbar],
+    modules: [Navigation, Scrollbar, Keyboard],
     speed: 600,
-    loop: true,
+    // loop: true,
     navigation: {
       nextEl: '.reviews-swiper-button-next',
       prevEl: '.reviews-swiper-button-prev',
     },
-
+    keyboard: {
+      enabled: true,
+      onlyInViewport: true,
+    },
     slidesPerView: 1,
     spaceBetween: 16,
     breakpoints: {
@@ -85,21 +88,6 @@ document.addEventListener('DOMContentLoaded', () => {
         spaceBetween: 16,
       },
     },
-  });
-
-  document.addEventListener('keydown', event => {
-    if (event.key === 'ArrowRight') {
-      swiper.slideNext(1000);
-    } else if (event.key === 'ArrowLeft') {
-      swiper.slidePrev(1000);
-    } else if (event.key === 'Tab') {
-      event.preventDefault();
-      if (event.shiftKey) {
-        swiper.slidePrev(1000);
-      } else {
-        swiper.slideNext(1000);
-      }
-    }
   });
 });
 

@@ -62,10 +62,12 @@
   user-select: none;
 }
 
+.advantages-swiper-button-prev > svg,
 .reviews-swiper-button-prev > svg,
 .gallery-swiper-button-prev > svg {
   transform: translateX(-3px);
 }
+.advantages-swiper-button-prev,
 .reviews-swiper-button-prev,
 .gallery-swiper-button-prev {
   display: flex;
@@ -78,10 +80,12 @@
   background-color: var(--accent-stroke);
 }
 
+.advantages-swiper-button-next > svg,
 .reviews-swiper-button-next > svg,
 .gallery-swiper-button-next > svg {
   transform: translateX(-3px);
 }
+.advantages-swiper-button-next,
 .reviews-swiper-button-next,
 .gallery-swiper-button-next {
   transform: rotate(180deg);
@@ -117,7 +121,7 @@
 }
 
 .swiper-button-disabled svg {
-  opacity: 0.4;
+  opacity: 0.1;
 }
 
 @media screen and (min-width: 768px) {
@@ -132,21 +136,25 @@
     margin-bottom: 48px;
   }
 
+  .advantages-swiper-button-prev,
   .reviews-swiper-button-prev,
   .gallery-swiper-button-prev {
     width: 96px;
     height: 96px;
   }
+  .advantages-swiper-button-next,
   .reviews-swiper-button-next,
   .gallery-swiper-button-next {
     width: 96px;
     height: 96px;
   }
+  .advantages-swiper-button-prev > svg,
   .reviews-swiper-button-prev > svg,
   .gallery-swiper-button-prev > svg {
     height: 32px;
     width: 32px;
   }
+  .advantages-swiper-button-next > svg,
   .reviews-swiper-button-next > svg,
   .gallery-swiper-button-next > svg {
     height: 32px;
