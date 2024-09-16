@@ -1,18 +1,15 @@
 .faq .container {
-  padding-top: 32px;
   padding-bottom: 32px;
 }
 
 @media only screen and (min-width: 768px) {
   .faq .container {
-    padding-top: 48px;
     padding-bottom: 48px;
   }
 }
 @media only screen and (min-width: 1440px) {
   .faq .container {
-    padding-top: 82px;
-    padding-bottom: 82px;
+    padding-bottom: 104px;
   }
 }
 
