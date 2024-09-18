@@ -55,10 +55,10 @@ function renderReviews(reviews) {
 
   reviewsList.insertAdjacentHTML('beforeend', markup);
 
-  const reviewCards = document.querySelectorAll('.reviews-item p');
-  reviewCards.forEach(reviewCard => {
-    OverlayScrollbars(reviewCard, defaultOptions);
-  });
+  // const reviewCards = document.querySelectorAll('.reviews-item p');
+  // reviewCards.forEach(reviewCard => {
+  //   OverlayScrollbars(reviewCard, defaultOptions);
+  // });
 }
 
 document.addEventListener('DOMContentLoaded', () => {
