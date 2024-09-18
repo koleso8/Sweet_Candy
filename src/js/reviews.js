@@ -92,41 +92,41 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 
 // #region scroll
-import 'overlayscrollbars/overlayscrollbars.css';
-import {
-  OverlayScrollbars,
-  ScrollbarsHidingPlugin,
-  SizeObserverPlugin,
-  ClickScrollPlugin,
-} from 'overlayscrollbars';
-import { iconBrackets } from './images';
+// import 'overlayscrollbars/overlayscrollbars.css';
+// import {
+//   OverlayScrollbars,
+//   ScrollbarsHidingPlugin,
+//   SizeObserverPlugin,
+//   ClickScrollPlugin,
+// } from 'overlayscrollbars';
+// import { iconBrackets } from './images';
 
-OverlayScrollbars.plugin(ScrollbarsHidingPlugin);
-OverlayScrollbars.plugin(SizeObserverPlugin);
-OverlayScrollbars.plugin(ClickScrollPlugin);
+// OverlayScrollbars.plugin(ScrollbarsHidingPlugin);
+// OverlayScrollbars.plugin(SizeObserverPlugin);
+// OverlayScrollbars.plugin(ClickScrollPlugin);
 
-const defaultOptions = {
-  paddingAbsolute: false,
-  showNativeOverlaidScrollbars: false,
-  update: {
-    elementEvents: [['img', 'load']],
-    debounce: [0, 33],
-    attributes: null,
-    ignoreMutation: null,
-  },
-  overflow: {
-    x: 'scroll',
-    y: 'scroll',
-  },
-  scrollbars: {
-    theme: 'os-theme-light',
-    visibility: 'auto',
-    autoHide: 'scroll',
-    autoHideDelay: 100,
-    autoHideSuspend: false,
-    dragScroll: true,
-    clickScroll: false,
-    pointers: ['mouse', 'touch', 'pen'],
-  },
-};
+// const defaultOptions = {
+//   paddingAbsolute: false,
+//   showNativeOverlaidScrollbars: false,
+//   update: {
+//     elementEvents: [['img', 'load']],
+//     debounce: [0, 33],
+//     attributes: null,
+//     ignoreMutation: null,
+//   },
+//   overflow: {
+//     x: 'scroll',
+//     y: 'scroll',
+//   },
+//   scrollbars: {
+//     theme: 'os-theme-light',
+//     visibility: 'auto',
+//     autoHide: 'scroll',
+//     autoHideDelay: 100,
+//     autoHideSuspend: false,
+//     dragScroll: true,
+//     clickScroll: false,
+//     pointers: ['mouse', 'touch', 'pen'],
+//   },
+// };
 // #endregion scroll
