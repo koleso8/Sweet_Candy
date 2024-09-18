@@ -1,11 +1,12 @@
 .hero {
-  width: 100vw;
-  height: 100vh;
+  width: 100%;
+
   padding-top: 60px;
   @media only screen and (min-width: 768px) {
     padding-top: 120px;
   }
   @media only screen and (min-width: 1000px) {
+    padding-top: 240px;
   }
 }
 .hero > .container {
@@ -26,10 +27,11 @@
     flex-direction: column;
     align-items: flex-start;
     flex-wrap: wrap;
+    margin-bottom: 140px;
   }
 }
 .heroImg {
-  width: 40vh;
+  width: 190px;
 
   @media only screen and (min-width: 768px) {
     z-index: 1;
@@ -40,17 +42,18 @@
   }
   @media only screen and (min-width: 1200px) {
     position: absolute;
-    top: -10vh;
+    top: -120px;
 
-    right: 10px;
-    width: 60vh;
+    right: 0px;
+    width: 560px;
   }
 }
 .GPbutton {
   width: 192px;
   z-index: 1;
-  box-shadow: 2px 1px 60px #dd32ff;
+  /* box-shadow: 2px 1px 60px #dd32ff; */
   border-radius: 12px;
+  margin-bottom: 76px;
   @media only screen and (min-width: 1200px) {
     width: 364px;
     margin-bottom: 220px;
