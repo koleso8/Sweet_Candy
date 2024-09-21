@@ -45,7 +45,7 @@
 }
 
 .aboutImg1 {
-  /* box-shadow: 1px 1px 20px #dd32ff; */
+  box-shadow: 1px 1px 20px #dd32ff;
   border-radius: 24px;
   width: 90vw;
   @media only screen and (min-width: 1000px) {
@@ -59,7 +59,7 @@
 }
 
 .aboutImg2 {
-  /* box-shadow: 1px 1px 20px #dd32ff; */
+  box-shadow: 1px 1px 20px #dd32ff;
   border-radius: 24px;
   width: 90vw;
   @media only screen and (min-width: 1000px) {
@@ -73,7 +73,7 @@
 }
 
 .aboutImg3 {
-  /* box-shadow: 1px 1px 20px #dd32ff; */
+  box-shadow: 1px 1px 20px #dd32ff;
   border-radius: 24px;
   width: 90vw;
   @media only screen and (min-width: 1000px) {

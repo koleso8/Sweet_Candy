@@ -13,10 +13,10 @@
 .header {
   position: fixed;
   z-index: 999;
-  /* background: linear-gradient(180deg, #ab5a87 0%, #c78aac 100%); */
-  background: #ab5a87;
+  background: linear-gradient(180deg, #ab5a87 0%, #c78aac 100%);
+  /* background: #ab5a87; */
   width: 100vw;
-  /* box-shadow: 2px 1px 60px #dd32ff; */
+  box-shadow: 2px 1px 60px #dd32ff;
 }
 .nav-logo {
   margin-right: auto;
