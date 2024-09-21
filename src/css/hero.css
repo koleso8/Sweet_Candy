@@ -51,7 +51,7 @@
 .GPbutton {
   width: 192px;
   z-index: 1;
-  /* box-shadow: 2px 1px 60px #dd32ff; */
+  box-shadow: 2px 1px 60px #dd32ff;
   border-radius: 12px;
   margin-bottom: 76px;
   @media only screen and (min-width: 1200px) {
