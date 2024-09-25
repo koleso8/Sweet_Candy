@@ -28,7 +28,6 @@
   max-height: 173px;
   background: linear-gradient(90deg, #e7dcff 0%, #f3edff 100%);
   @media screen and (min-width: 1000px) {
-    width: 397px !important;
     min-height: 247px !important;
     padding: 26px;
   }
