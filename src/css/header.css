@@ -6,7 +6,7 @@
 
   @media only screen and (min-width: 1000px) {
     height: 120px;
-    padding: 56px 0 46px;
+    padding: 56px 16px 46px;
     /* padding-top: 54px; */
   }
 }
